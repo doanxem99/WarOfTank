@@ -21,6 +21,8 @@ This template has been updated for:
 | `npm install` | Install project dependencies |
 | `npm run dev` | Launch a development web server |
 | `npm run build` | Create a production build in the `dist` folder |
+| `npm run prettier:check` | Check code formatting |
+| `npm run prettier:format` | Format code |
 
 
 ## Writing Code
