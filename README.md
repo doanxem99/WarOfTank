@@ -1,5 +1,13 @@
 # War Of Tanks
-## Phaser 3 + Vite
+## Structure
+
+### Frontend
+- [Vite](https://vitejs.dev/) - A fast frontend build tool.
+
+- [Phaser](https://phaser.io/) - A fast, robust, and versatile HTML5 game framework.
+
+### Backend
+- [Flask](https://flask.palletsprojects.com/en/2.0.x/) - A lightweight WSGI web application framework in Python.
 
 ### Versions
 
@@ -15,7 +23,7 @@ This template has been updated for:
 [Node.js](https://nodejs.org) is required to install dependencies and run scripts via `npm`.
 
 ## Available Commands
-
+### Frontend
 | Command | Description |
 |---------|-------------|
 | `npm install` | Install project dependencies |
@@ -24,27 +32,23 @@ This template has been updated for:
 | `npm run prettier:check` | Check code formatting |
 | `npm run prettier:format` | Format code |
 
+### Backend
+| Command | Description |
+|---------|-------------|
+| `pip install -r requirements.txt` | Install project dependencies |
+| `python app.py` | Launch a development web server |
+
 
 ## Writing Code
+### Frontend
+Go to the `frontend` folder and run `npm install` to install the dependencies. Then you can start the local development server by running `npm run dev`.
 
-After cloning the repo, run `npm install` from your project directory. Then, you can start the local development server by running `npm run dev`.
+The local development server runs on `http://localhost:8080` by default.
 
-The local development server runs on `http://localhost:8080` by default. Please see the Vite documentation if you wish to change this, or add SSL support.
+### Backend
+Go to the `backend` folder and run `pip install -r requirements.txt` to install the dependencies. Then you can start the local development server by running `python app.py`. 
 
-Once the server is running you can edit any of the files in the `src` folder. Vite will automatically recompile your code and then reload the browser.
-
-## Template Project Structure
-
-- `index.html` - A basic HTML page to contain the game.
-- `src` - Contains the game source code.
-- `src/main.js` - The main entry point. This contains the game configuration and starts the game.
-- `src/scenes/` - The Phaser Scenes are in this folder.
-- `src/gameobjects/` - The Phaser Game Objects are in this folder.
-- `public/css/style.css` - Some simple CSS rules to help with page layout.
-- `public/assets` - Contains the static assets used by the game.
-- `public/fonts` - Contains some fonts used by the game.
-- `public/maps` - Contains some tilemaps used by the game.
-- `public/sounds` - Contains sound like music and sound effects used by the game.
+The local development server runs on `http://localhost:5000` by default.
 
 ## Handling Assets
 
